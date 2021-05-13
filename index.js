@@ -35,7 +35,7 @@ app
     // }
     // rs.status(200).set(tuc).end('Done!')
     const textFunction = `function task(x) {
-      return new Promise((res, rej) => x < 18 ? res('yes') : rej('no'); )
+      return new Promise((res, rej) => x < 18 ? res('yes') : rej('no'));
       }`;
     rs.status(200).set(tuc).end(textFunction)
   })
